@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My World</title>
 <link rel="stylesheet" href="styles.css">
 <script src="scripts.js"></script>
-<body>
-<header>
+  <style>
+    body {
+      background-color: lightblue;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      text-align: center;
+    }
+    
+    header, footer {
+      background-color: yellow;
+      padding: 15px;
+    }
+
+    nav {
+      background-color: red;
+      padding: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #labs {
+      border: 3px dashed #4fc3f7;  /* blue border */
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    #homework {
+      border: 3px dotted #ff8a65;  /* orange border*/
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    
+      
+  </style>
+</head>
+  
+  <body>
+    
+    <header>
 <!--repeated top of page info-->
 <h1>Main Page For CIS 119</h1>
-Jeff
+<p>Jeff Vaval</p>
 </header>
+    
 <nav>
 <!--repeated navigation here, may also move to header-->
 Nav area
 </nav>
+    
 <main>
 <!--main content goes here-->
-Main content
+    <div id="labs">
+      <h2>Labs</h2>
+      <p>Lab links go here</p>
+    </div>
+
+    <div id="homework">
+      <h2>Homework</h2>
+      <p>Homework links go here</p>
+    </div>
+  
 </main>
+    
 <footer>
 <!--repeated bottom of page content goes here-->
 Footer area
 </footer>
+    
 </body>
 </html>
