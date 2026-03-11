@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Invoice Form</title>
+
+<style>
+
+body{
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1{
+    text-align:center;
+    color:#6b2e4a;
+}
+.invoiceGrid{
+    width:700px;
+    margin:auto;
+    border:2px solid #3a4b8a;
+    display:grid;
+    /* percentage columns */
+    grid-template-columns: 40% 20% 20% 20%;
+    /* em rows */
+    grid-template-rows:
+        2em
+        2em
+        2em
+        2em
+        2em
+        2em
+        2em
+        2em
+        2em
+        2em
+        2em;
+}
+.invoiceGrid div{
+    border:1px solid #3a4b8a;
+    padding:5px;
+    /* vertical alignment */
+    display:flex;
+    align-items:center;
+}
+.header{
+    font-weight:bold;
+}
+.full{
+    grid-column:1 / 5;
+}
+.bar{
+    grid-column:1 / 5;
+    background:black;
+}
+.right{
+    text-align:right;
+}
+</style>
+</head>
+<body>
+<h1>Customer Order Form</h1>
+<div class="invoiceGrid">
+<div class="full">Order Number</div>
+<div class="full">Order Date</div>
+<div class="header">Product Name</div>
+<div class="header">Color</div>
+<div class="header">Quantity</div>
+<div class="header">Price</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="bar"></div>
+<div class="full">Subtotal</div>
+<div class="full">Tax</div>
+<div>Shipping</div>
+<div></div>
+<div></div>
+<div class="right">5.95</div>
+<div class="full">Total</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
