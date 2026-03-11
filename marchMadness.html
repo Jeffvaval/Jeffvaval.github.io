@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>March Madness</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+/* OUTER GRID */
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:900px;
+    margin:auto;
+    border:2px solid black;
+}
+/* LEFT SECTION */
+.left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    font-weight:bold;
+}
+/* RIGHT SECTION */
+.right{
+    padding:20px;
+}
+/* MIDDLE SECTION GRID */
+.calendar{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows:
+        auto
+        auto
+        repeat(5,40px);
+    padding:10px;
+}
+/* MONTH TITLE */
+.month{
+    grid-column:1/8;
+    font-weight:bold;
+    font-size:22px;
+}
+/* DAYS */
+.day{
+    font-weight:bold;
+}
+/* CELLS */
+.cell{
+    border:1px solid #ccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* GOLD CELLS STARTING MARCH 16 */
+.cell:nth-child(n+25):nth-child(-n+40){
+    background:gold;
+}
+/* CELLS AFTER 31 */
+.cell:nth-child(n+41){
+    background:transparent;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- LEFT -->
+<div class="left">
+MARCH<br>MADNESS
+</div>
+<!-- MIDDLE CALENDAR -->
+<div class="calendar">
+<div class="month">March</div>
+<div class="day">Sun</div>
+<div class="day">Mon</div>
+<div class="day">Tue</div>
+<div class="day">Wed</div>
+<div class="day">Thu</div>
+<div class="day">Fri</div>
+<div class="day">Sat</div>
+<!-- Calendar Numbers -->
+<div class="cell"></div>
+<div class="cell">1</div>
+<div class="cell">2</div>
+<div class="cell">3</div>
+<div class="cell">4</div>
+<div class="cell">5</div>
+<div class="cell">6</div>
+<div class="cell">7</div>
+<div class="cell">8</div>
+<div class="cell">9</div>
+<div class="cell">10</div>
+<div class="cell">11</div>
+<div class="cell">12</div>
+<div class="cell">13</div>
+<div class="cell">14</div>
+<div class="cell">15</div>
+<div class="cell">16</div>
+<div class="cell">17</div>
+<div class="cell">18</div>
+<div class="cell">19</div>
+<div class="cell">20</div>
+<div class="cell">21</div>
+<div class="cell">22</div>
+<div class="cell">23</div>
+<div class="cell">24</div>
+<div class="cell">25</div>
+<div class="cell">26</div>
+<div class="cell">27</div>
+<div class="cell">28</div>
+<div class="cell">29</div>
+<div class="cell">30</div>
+<div class="cell">31</div>
+<div class="cell"></div>
+<div class="cell"></div>
+<div class="cell"></div>
+</div>
+<!-- RIGHT -->
+<div class="right">
+<h3>The Tigers</h3>
+<p>
+Fight Tigers fight for old Mizzou,<br>
+Right behind you, everyone is with you,<br>
+Break the line and follow through,<br>
+And victory will come to you.
+</p>
+</div>
+</div>
+</body>
+</html>
