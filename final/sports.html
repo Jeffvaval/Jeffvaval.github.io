@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anime World - Sports</title>
+
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
+
+header { background: #1f1f1f; padding: 20px; text-align: center; border-bottom: 3px solid crimson; }
+
+h1 { color: crimson; margin: 0; }
+
+nav { text-align: center; margin: 20px; }
+
+nav a { color: white; margin: 8px; text-decoration: none; font-weight: bold; }
+
+nav a:hover { color: crimson; }
+
+section { padding: 20px; text-align: center; }
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("haikyuu.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px crimson;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sports Anime</h1>
+    <p>Anime about teamwork, training, competition, and growth</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="top10.html">Top 10</a>
+    <a href="genres.html">Genres</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="horror.html">Horror</a>
+    <a href="comedy.html">Comedy</a>
+    <a href="sports.html">Sports</a>
+    <a href="about.html">About</a>
+    <a href="facts.html">Facts</a>
+</nav>
+
+<div class="hero">
+    <h2>Sports Anime</h2>
+    <p>Stories about athletes, teamwork, practice, and winning</p>
+</div>
+
+<section>
+    <h2>Recommended Sports Anime</h2>
+    <p>These anime focus on teamwork, competition, and characters working hard to improve.</p>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="haikyuu.jpg" alt="Haikyuu">
+            <h3>Haikyuu!!</h3>
+            <p>A volleyball anime about teamwork, growth, and never giving up.</p>
+        </div>
+
+        <div class="card">
+            <img src="blue_lock.jpg" alt="Blue Lock">
+            <h3>Blue Lock</h3>
+            <p>A soccer anime about competition, skill, and becoming the best striker.</p>
+        </div>
+
+        <div class="card">
+            <img src="kuroko_basketball.jpg" alt="Kuroko's Basketball">
+            <h3>Kuroko’s Basketball</h3>
+            <p>A basketball anime with intense games and talented players.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer style="text-align:center; padding:20px; color:gray;">
+    <p>© 2026 Anime World | Created by Jeff Vaval</p>
+</footer>
+
+</body>
+</html>
