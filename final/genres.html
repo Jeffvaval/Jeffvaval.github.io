@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 <title>Anime World - Genres</title>
   
-  
 <style>
   
-body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
+body { margin:0; font-family:Arial, sans-serif; background:#121212; color:white; }
+header { background:#1f1f1f; padding:20px; text-align:center; border-bottom:3px solid crimson; }
+h1 { color:crimson; margin:0; }
   
-header { background: #1f1f1f; padding: 20px; text-align: center; border-bottom: 3px solid crimson; }
+nav { text-align:center; margin:20px; }
+nav a { color:white; margin:8px; text-decoration:none; font-weight:bold; }
+nav a:hover { color:crimson; }
   
-h1 { color: crimson; margin: 0; }
-  
-nav { text-align: center; margin: 20px; }
-  
-nav a { color: white; margin: 8px; text-decoration: none; font-weight: bold; }
-nav a:hover { color: crimson; }
-section { padding: 20px; text-align: center; }
-.box { background: #1e1e1e; margin: 15px auto; padding: 15px; border-radius: 10px; max-width: 700px; }
-  
+section { padding:20px; text-align:center; }
+.box {
+    background:#1e1e1e;
+    margin:15px auto;
+    padding:15px;
+    border-radius:10px;
+    max-width:700px;
+}
+.gallery {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+.gallery img {
+    width:250px;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+}
+.gallery img:hover {
+    transform:scale(1.05);
+}
 </style>
-  
 </head>
-  
 <body>
-
 <header>
     <h1>Anime Genres</h1>
     <p>Different types of anime stories</p>
 </header>
-
 <nav>
     <a href="index.html">Home</a>
     <a href="top10.html">Top 10</a>
@@ -46,28 +60,32 @@ section { padding: 20px; text-align: center; }
     <a href="about.html">About</a>
     <a href="facts.html">Facts</a>
 </nav>
-
 <section>
+    <div class="gallery">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Attack_on_Titan_Season_1.jpg" alt="Action Anime">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Your_Lie_in_April_Manga_cover.png" alt="Romance Anime">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Tokyo_Ghoul_volume_1_cover.jpg" alt="Horror Anime">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/OnePunchMan_manga_cover.png" alt="Comedy Anime">
+    </div>
     <div class="box">
         <h2>Action</h2>
         <p>Action anime focuses on battles, adventure, danger, and exciting storylines.</p>
     </div>
-
     <div class="box">
         <h2>Romance</h2>
         <p>Romance anime focuses on relationships, emotions, and character growth.</p>
     </div>
-
     <div class="box">
         <h2>Horror</h2>
         <p>Horror anime uses fear, mystery, monsters, or dark themes.</p>
     </div>
-
     <div class="box">
         <h2>Comedy</h2>
         <p>Comedy anime is made to be funny, lighthearted, and entertaining.</p>
     </div>
 </section>
-
+<p style="text-align:center; font-size:12px; color:gray;">
+Images belong to their respective owners and are used for school project purposes.
+</p>
 </body>
 </html>
