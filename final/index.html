@@ -57,6 +57,31 @@ button {
     border-radius:5px;
     cursor:pointer;
 }
+
+      .video-card {
+    background: #1e1e1e;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px crimson;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>
 </head>
 
@@ -96,14 +121,19 @@ button {
         <img src="https://en.wikipedia.org/wiki/Special:FilePath/Jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
     </div>
 
-    <h2>Watch an Action Anime Clip</h2>
-    <p>Check out this intense fight scene.</p>
+   <section class="video-card">
+    <h2>Featured Anime Clip</h2>
+    <p>This video gives visitors a quick look at the excitement and style of anime.</p>
 
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/MGRm4IzK1SQ" 
-        title="Attack on Titan Fight Scene"
-        allowfullscreen>
-    </iframe>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/MGRm4IzK1SQ"
+            title="Featured Anime Clip"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
 </section>
 
 <footer>
