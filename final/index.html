@@ -8,31 +8,39 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: #121212;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a0b13);
     color: white;
 }
 
 header {
-    background: #1f1f1f;
-    padding: 20px;
+    background: #111;
+    padding: 25px;
     text-align: center;
-    border-bottom: 3px solid crimson;
+    border-bottom: 4px solid crimson;
+    box-shadow: 0 0 20px crimson;
 }
 
-h1 {
+header h1 {
     margin: 0;
     color: crimson;
+    font-size: 42px;
+    text-shadow: 0 0 10px crimson;
+}
+
+header p {
+    font-size: 18px;
 }
 
 nav {
     text-align: center;
-    margin: 20px;
+    background: #1b1b1b;
+    padding: 15px;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -41,38 +49,104 @@ nav a:hover {
     color: crimson;
 }
 
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url("https://en.wikipedia.org/wiki/Special:FilePath/Anime_Girl.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    color: crimson;
+    font-size: 35px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
 section {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
-/* Cards */
-.card {
-    background: #1e1e1e;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 250px;
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Images */
+.card {
+    background: #1e1e1e;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 0 12px black;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px crimson;
+}
+
+.rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: crimson;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
 .card img {
     width: 100%;
-    height: 300px;
+    height: 310px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 10px;
 }
 
-/* Button */
+.card h3 {
+    color: crimson;
+}
+
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: crimson;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 0 10px crimson;
+}
+
+button:hover {
+    background: white;
+    color: crimson;
+}
+
+#message {
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-top: 3px solid crimson;
+    margin-top: 30px;
 }
 </style>
 </head>
@@ -86,84 +160,114 @@ button {
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">Top 10</a>
-    <a href="#">Genres</a>
+    <a href="#top10">Top 10</a>
+    <a href="#genres">Genres</a>
 </nav>
 
-<section>
-    <h2>Top Anime</h2>
+<div class="hero">
+    <h2>Welcome to the Anime World</h2>
+    <p>
+        This website introduces beginners to popular anime shows,
+        different genres, and exciting stories that anime fans enjoy.
+    </p>
+</div>
 
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Attack_on_Titan_Season_1.jpg">
-        <h3>Attack on Titan</h3>
-        <p>Humanity fights Titans in a dark world.</p>
+<section id="top10">
+    <h2>Top 10 Anime</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="rank">1</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Attack_on_Titan_Season_1.jpg" alt="Attack on Titan">
+            <h3>Attack on Titan</h3>
+            <p>Humanity fights Titans in a dark world.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">2</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/NarutoCoverTankobon1.jpg" alt="Naruto">
+            <h3>Naruto</h3>
+            <p>A ninja dreams of becoming Hokage.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">3</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/One_Piece,_Volume_61_Cover_(Japanese).jpg" alt="One Piece">
+            <h3>One Piece</h3>
+            <p>Pirates search for the ultimate treasure.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">4</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Demon_Slayer_Volume_1.png" alt="Demon Slayer">
+            <h3>Demon Slayer</h3>
+            <p>Tanjiro fights demons to save his sister.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">5</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
+            <h3>Jujutsu Kaisen</h3>
+            <p>Students battle curses using cursed energy.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">6</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Death_Note_Vol_1.jpg" alt="Death Note">
+            <h3>Death Note</h3>
+            <p>A student gains a notebook with deadly power.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">7</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Fullmetal_Alchemist_Brotherhood_key_visual.png" alt="Fullmetal Alchemist Brotherhood">
+            <h3>Fullmetal Alchemist: Brotherhood</h3>
+            <p>Two brothers search for the Philosopher’s Stone.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">8</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/My_Hero_Academia_Volume_1.png" alt="My Hero Academia">
+            <h3>My Hero Academia</h3>
+            <p>A boy without powers wants to become a hero.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">9</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Dragon_Ball_Super_Volume_1.png" alt="Dragon Ball Super">
+            <h3>Dragon Ball Super</h3>
+            <p>Goku faces powerful warriors across universes.</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">10</div>
+            <img src="https://en.wikipedia.org/wiki/Special:FilePath/Your_Lie_in_April_Manga_cover.png" alt="Your Lie in April">
+            <h3>Your Lie in April</h3>
+            <p>A music story about love, healing, and emotion.</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/NarutoCoverTankobon1.jpg">
-        <h3>Naruto</h3>
-        <p>A ninja dreams of becoming Hokage.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/One_Piece,_Volume_61_Cover_(Japanese).jpg">
-        <h3>One Piece</h3>
-        <p>Pirates search for the ultimate treasure.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Demon_Slayer_Volume_1.png">
-        <h3>Demon Slayer</h3>
-        <p>Tanjiro fights demons to save his sister.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Jujutsu_kaisen.jpg">
-        <h3>Jujutsu Kaisen</h3>
-        <p>Students battle curses using cursed energy.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Death_Note_Vol_1.jpg">
-        <h3>Death Note</h3>
-        <p>A student gains a notebook with deadly power.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Fullmetal_Alchemist_Brotherhood_key_visual.png">
-        <h3>Fullmetal Alchemist: Brotherhood</h3>
-        <p>Two brothers search for the Philosopher’s Stone.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/My_Hero_Academia_Volume_1.png">
-        <h3>My Hero Academia</h3>
-        <p>A boy without powers wants to become a hero.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Dragon_Ball_Super_Volume_1.png">
-        <h3>Dragon Ball Super</h3>
-        <p>Goku faces powerful warriors across universes.</p>
-    </div>
-
-    <div class="card">
-        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Your_Lie_in_April_Manga_cover.png">
-        <h3>Your Lie in April</h3>
-        <p>A music story about love, healing, and emotion.</p>
-    </div>
-
-    <!-- JavaScript Button -->
     <div style="margin-top: 30px;">
-        <button onclick="showMessage()">Click Me</button>
+        <button onclick="showMessage()">Click for Anime Message</button>
         <p id="message"></p>
     </div>
-
 </section>
+
+<section id="genres">
+    <h2>Popular Anime Genres</h2>
+    <p>Action, adventure, romance, fantasy, comedy, sports, and slice of life are some popular anime genres.</p>
+</section>
+
+<footer>
+    <p>Anime World Final Project | Created by Jeff Vaval</p>
+</footer>
 
 <script>
 function showMessage() {
-    document.getElementById("message").innerHTML = "Welcome to the anime world 👊🔥";
+    document.getElementById("message").innerHTML =
+    "Welcome to Anime World! Pick a genre and start your anime journey.";
 }
 </script>
 
