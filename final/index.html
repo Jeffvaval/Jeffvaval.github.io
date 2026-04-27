@@ -2,18 +2,61 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 <title>Anime World - Home</title>
 
 <style>
-body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
-header { background: #1f1f1f; padding: 20px; text-align: center; border-bottom: 3px solid crimson; }
-h1 { color: crimson; margin: 0; }
-nav { text-align: center; margin: 20px; }
-nav a { color: white; margin: 8px; text-decoration: none; font-weight: bold; }
-nav a:hover { color: crimson; }
-section { padding: 20px; text-align: center; }
-button { padding: 10px 20px; background: crimson; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    
+body { margin:0; font-family:Arial, sans-serif; background:#121212; color:white; 
+     
+header { background:#1f1f1f; padding:20px; text-align:center; border-bottom:3px solid crimson; }
+h1 { color:crimson; margin:0; }
+      
+nav { text-align:center; margin:20px; }
+nav a { color:white; margin:8px; text-decoration:none; font-weight:bold; }
+nav a:hover { color:crimson; }
+
+.hero {
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("https://en.wikipedia.org/wiki/Special:FilePath/Attack_on_Titan_Season_1.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:80px 20px;
+    text-align:center;
+}
+
+section { padding:20px; text-align:center; }
+
+.gallery {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.gallery img {
+    width:250px;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover {
+    transform:scale(1.05);
+}
+
+button {
+    padding:10px 20px;
+    background:crimson;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
 </style>
 </head>
 
@@ -37,9 +80,20 @@ button { padding: 10px 20px; background: crimson; color: white; border: none; bo
     <a href="facts.html">Facts</a>
 </nav>
 
-<section>
+<div class="hero">
     <h2>Welcome to Anime World</h2>
-    <p>This website is a beginner-friendly guide to anime. It includes popular shows, genres, and facts for new fans.</p>
+    <p>Explore anime by genre, style, and story.</p>
+</div>
+
+<section>
+    <h2>Featured Anime</h2>
+    <p>This website helps beginners discover popular anime, genres, and fun facts.</p>
+
+    <div class="gallery">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/NarutoCoverTankobon1.jpg" alt="Naruto">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Demon_Slayer_Volume_1.png" alt="Demon Slayer">
+        <img src="https://en.wikipedia.org/wiki/Special:FilePath/Jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
+    </div>
 
     <button onclick="showMessage()">Click Me</button>
     <p id="message"></p>
@@ -50,6 +104,10 @@ function showMessage() {
     document.getElementById("message").innerHTML = "Welcome to the anime world 👊🔥";
 }
 </script>
+
+<p style="text-align:center; font-size:12px; color:gray;">
+Images belong to their respective owners and are used for school project purposes.
+</p>
 
 </body>
 </html>
