@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anime World - Contact</title>
+
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
+
+header { background: #1f1f1f; padding: 20px; text-align: center; border-bottom: 3px solid crimson; }
+
+h1 { color: crimson; margin: 0; }
+
+nav { text-align: center; margin: 20px; }
+
+nav a { color: white; margin: 8px; text-decoration: none; font-weight: bold; }
+
+nav a:hover { color: crimson; }
+
+section { padding: 20px; text-align: center; }
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("naruto.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* FORM */
+form {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact</h1>
+    <p>Send a message or feedback</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="top10.html">Top 10</a>
+    <a href="genres.html">Genres</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="horror.html">Horror</a>
+    <a href="comedy.html">Comedy</a>
+    <a href="sports.html">Sports</a>
+    <a href="about.html">About</a>
+    <a href="facts.html">Facts</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you</p>
+</div>
+
+<section>
+
+    <h2>Contact Form</h2>
+
+    <form onsubmit="sendMessage(); return false;">
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea rows="4" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="confirmation"></p>
+
+</section>
+
+<script>
+function sendMessage() {
+    document.getElementById("confirmation").innerHTML =
+    "Message sent successfully! (demo only)";
+}
+</script>
+
+<footer style="text-align:center; padding:20px; color:gray;">
+    <p>© 2026 Anime World | Created by Jeff Vaval</p>
+</footer>
+
+</body>
+</html>
