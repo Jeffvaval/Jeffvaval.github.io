@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anime World - Facts</title>
+
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
+
+header { background: #1f1f1f; padding: 20px; text-align: center; border-bottom: 3px solid crimson; }
+
+h1 { color: crimson; margin: 0; }
+
+nav { text-align: center; margin: 20px; }
+
+nav a { color: white; margin: 8px; text-decoration: none; font-weight: bold; }
+
+nav a:hover { color: crimson; }
+
+section { padding: 20px; text-align: center; }
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("naruto.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* FACT BOX */
+.fact-box {
+    background: #1e1e1e;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 500px;
+    transition: 0.3s;
+}
+
+.fact-box:hover {
+    box-shadow: 0 0 15px crimson;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anime Facts</h1>
+    <p>Click the button to learn something new</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="top10.html">Top 10</a>
+    <a href="genres.html">Genres</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="horror.html">Horror</a>
+    <a href="comedy.html">Comedy</a>
+    <a href="sports.html">Sports</a>
+    <a href="about.html">About</a>
+    <a href="facts.html">Facts</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Anime Facts</h2>
+    <p>Discover cool facts about anime</p>
+</div>
+
+<section>
+
+    <div class="fact-box">
+        <h2>Random Anime Fact</h2>
+        <p id="fact">Click the button to see a fact!</p>
+        <button onclick="showFact()">Show Fact</button>
+    </div>
+
+</section>
+
+<script>
+function showFact() {
+    var facts = [
+        "Anime is a style of animation that originated in Japan.",
+        "Many anime series are based on manga (Japanese comics).",
+        "Naruto is one of the most popular anime worldwide.",
+        "Anime can include many genres like action, romance, horror, and comedy.",
+        "Studio Ghibli created famous anime movies like Spirited Away.",
+        "Some anime are made for kids, while others are made for adults.",
+        "Attack on Titan became one of the most popular anime of the 2010s."
+    ];
+
+    var random = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").innerHTML = facts[random];
+}
+</script>
+
+<footer style="text-align:center; padding:20px; color:gray;">
+    <p>© 2026 Anime World | Created by Jeff Vaval</p>
+</footer>
+
+</body>
+</html>
