@@ -88,8 +88,14 @@ section {
         <h3>Your Lie in April</h3>
         <p>A beautiful story of music and love.</p>
     </div>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
 
 </section>
-
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML = "Anime is awesome!";
+}
+</script>
 </body>
 </html>
