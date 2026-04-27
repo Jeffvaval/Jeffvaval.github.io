@@ -4,53 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-<title>Anime World - Action</title>
+<title>Action Anime</title>
   
 <style>
+body {margin:0;font-family:Arial;background:#121212;color:white;}
+header {background:#1f1f1f;padding:20px;text-align:center;border-bottom:3px solid crimson;}
   
-      body { margin: 0; font-family: Arial, sans-serif; background: #121212; color: white; }
+h1 {color:crimson;margin:0;}
   
-  header { background: #1f1f1f; padding: 20px; text-align: center; border-bottom: 3px solid crimson; }
+nav {text-align:center;margin:20px;}
+nav a {color:white;margin:8px;text-decoration:none;font-weight:bold;}
+nav a:hover {color:crimson;}
   
-h1 { color: crimson; margin: 0; }
+section {padding:20px;text-align:center;}
   
-    nav { text-align: center; margin: 20px; }
+.gallery {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
   
-nav a { color: white; margin: 8px; text-decoration: none; font-weight: bold; }
+.gallery img {width:250px;height:350px;object-fit:cover;border-radius:10px;transition:.3s;}
   
-nav a:hover { color: crimson; }
-  
-section { padding: 20px; text-align: center; }
-  
+.gallery img:hover {transform:scale(1.05);}
 </style>
+  
 </head>
 <body>
-
-<header>
-    <h1>Action Anime</h1>
-    <p>Fast-paced anime with battles and adventure</p>
-</header>
-
+  
+<header><h1>Action Anime</h1></header>
 <nav>
-    <a href="index.html">Home</a>
-    <a href="top10.html">Top 10</a>
-    <a href="genres.html">Genres</a>
-    <a href="action.html">Action</a>
-    <a href="romance.html">Romance</a>
-    <a href="horror.html">Horror</a>
-    <a href="comedy.html">Comedy</a>
-    <a href="sports.html">Sports</a>
-    <a href="about.html">About</a>
-    <a href="facts.html">Facts</a>
+<a href="index.html">Home</a>
+<a href="top10.html">Top 10</a>
+<a href="genres.html">Genres</a>
+<a href="action.html">Action</a>
+<a href="romance.html">Romance</a>
+<a href="horror.html">Horror</a>
+<a href="comedy.html">Comedy</a>
+<a href="sports.html">Sports</a>
+<a href="about.html">About</a>
+<a href="facts.html">Facts</a>
 </nav>
-
+  
 <section>
-    <h2>What is action anime?</h2>
-    <p>Action anime usually includes fighting, intense scenes, heroes, villains, and powerful abilities.</p>
-
-    <h2>Examples</h2>
-    <p>Attack on Titan, Demon Slayer, Jujutsu Kaisen, Bleach, Naruto, My Hero Academia and Dragon Ball Super.</p>
+<p>Action anime is full of fights, adventure, and powerful characters.</p>
+<div class="gallery">
+<img src="https://en.wikipedia.org/wiki/Special:FilePath/Attack_on_Titan_Season_1.jpg">
+<img src="https://en.wikipedia.org/wiki/Special:FilePath/Demon_Slayer_Volume_1.png">
+<img src="https://en.wikipedia.org/wiki/Special:FilePath/Jujutsu_kaisen.jpg">
+  
+</div>
 </section>
-
 </body>
 </html>
