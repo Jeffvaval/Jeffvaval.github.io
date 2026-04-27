@@ -101,6 +101,24 @@ button {
     box-shadow: 0 0 20px crimson, 0 0 40px crimson;
     transform: scale(1.05);
 }
+      .light-mode {
+    background: white;
+    color: black;
+}
+
+.light-mode header {
+    background: #f0f0f0;
+    border-bottom: 3px solid crimson;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode .card {
+    background: #f5f5f5;
+    color: black;
+}
 </style>
 </head>
 
@@ -109,6 +127,7 @@ button {
 <header>
     <h1>Anime World</h1>
     <p>Your beginner guide to anime</p>
+    <button onclick="toggleMode()" class="cta-button">Toggle Theme</button>
 </header>
 
 <nav>
@@ -230,6 +249,11 @@ function welcomeMessage() {
 <p style="text-align:center; font-size:12px; color:gray;">
 Images belong to their respective owners and are used for school project purposes.
 </p>
+    <script>
+function toggleMode() {
+    document.body.classList.toggle("light-mode");
+}
+</script>
 
 </body>
 </html>
