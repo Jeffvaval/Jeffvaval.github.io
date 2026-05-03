@@ -1,10 +1,9 @@
-<style>
-    
 body { 
     margin:0;
     font-family:Arial, sans-serif;
     background:#121212;
     color:white; 
+}
      
 header {
     background:#1f1f1f;
@@ -12,10 +11,15 @@ header {
     text-align:center; 
     border-bottom:3px solid crimson;
 }
-h1 { color:crimson; margin:0; }
+
+h1 { 
+    color:crimson; margin:0;
+   }
       
 nav { text-align:center; margin:20px; }
+
 nav a { color:white; margin:8px; text-decoration:none; font-weight:bold; }
+
 nav a:hover { color:crimson; }
 
       
@@ -128,5 +132,5 @@ button {
     padding: 20px;
     text-align: center;
 }
-</style>
+
     
