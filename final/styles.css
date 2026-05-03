@@ -246,3 +246,34 @@ main {
     background: white;
     color: crimson;
 }
+.about-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 15px crimson;
+    text-align: center;
+}
+
+.about-section p {
+    line-height: 1.6;
+}
+
+.about-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-card {
+    background: #121212;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.about-card h3 {
+    color: crimson;
+}
